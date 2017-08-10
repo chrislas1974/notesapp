@@ -8,9 +8,9 @@ const server=restify.createServer({
 
 // dev time only
 server.use(restify.CORS());
- 
+
 registerNoteRoutes(server, require("./controllers/noteController"));
 
 server.listen(port,() => {
-  console.log("API server running on port ..."+port);
+  console.log("API notes-server running on port ..."+port);
 });
